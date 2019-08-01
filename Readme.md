@@ -24,14 +24,16 @@ add '-lnuma' numa library
 add '-Wl,--no-as-needed'
 eg,edit MakeFile in folder 
 
-```CFLAGS:=-Os -Wall -MMD -fno-asynchronous-unwind-tables -fdata-sections -ffunction-sections -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -fomit-frame-pointer -Wl,--no-as-needed```
+>```CFLAGS:=-Os -Wall -MMD -fno-asynchronous-unwind-tables -fdata-sections -ffunction-sections -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -fomit-frame-pointer -Wl,--no-as-needed```
+>this is not needed
+
 ```LDFLAGS+=-Wl,--gc-sections -Wl,--no-as-needed```
 ```LIBS:=-lrt -lnuma```
 
 #x265
 you may need compile x265 support lib first:
 
-``sudo ./libbpg-0.9.8/x265/build/linux/make-Makefiles.bash``
+``sudo ./libbpg-0.9.8/x265/build/linux/make-Makefiles.bash && make &&./libbpg-0.9.8/x265/build/linux/multilib.sh``
 will get 10bit,8bit,12bit folder in /libbpg-0.9.8/x265/build/linux/,cp them to /libbpg-0.9.8/x265.out/
 
 then ``make``
@@ -71,3 +73,10 @@ SDL_X11_SYM(void,_XRead32,(Display *dpy,register long *data,long len),(dpy,data,
 
 </div>
 
+
+
+#Centos
+
+```
+yum install gcc libpng-devel libjpeg-turbo-devel.x86_64 cmake numactl-devel.x86_64 gcc-c++ yasm-devel SDL-devel.x86_64 SDL_image-devel
+```
