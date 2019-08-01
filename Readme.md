@@ -83,3 +83,14 @@ yum install gcc libpng-devel libjpeg-turbo-devel.x86_64 cmake numactl-devel.x86_
 ```
 
 the other same as ubuntu.
+
+
+
+#Crosscompile for windows on centos
+after successful compiled elf for centos.
+delete the comment # before CONFIG_WIN32=y,and recover the Wl,--no-as-needed and libnuma.
+
+``make clean``
+
+``yum install mingw64-libpng-static mingw64-zlib.noarch``
+``mingw64-libjpeg-turbo mingw64-SDL mingw64-SDL_image``
