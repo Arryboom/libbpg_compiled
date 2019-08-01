@@ -39,7 +39,8 @@ will get 10bit,8bit,12bit folder in /libbpg-0.9.8/x265/build/linux/,cp them to /
 then ``make``
 
 
-#SDL
+#SDL 
+>not needed.
 
 https://www.libsdl.org/release/SDL-1.2.15.tar.gz
 
@@ -80,3 +81,5 @@ SDL_X11_SYM(void,_XRead32,(Display *dpy,register long *data,long len),(dpy,data,
 ```
 yum install gcc libpng-devel libjpeg-turbo-devel.x86_64 cmake numactl-devel.x86_64 gcc-c++ yasm-devel SDL-devel.x86_64 SDL_image-devel
 ```
+
+the other same as ubuntu.
