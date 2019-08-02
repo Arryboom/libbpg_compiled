@@ -1,4 +1,4 @@
-This the compile record for libbpg 0.9.8 on ubuntu 19.04
+This the compile record for libbpg 0.9.8 on ubuntu 19.04/centos 7.4/crosscompile for windows
 
 BPG (Better Portable Graphics) is a new image format. Its purpose is to replace the JPEG image format when quality or file size is an issue. 
 official link:
