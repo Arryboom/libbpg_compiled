@@ -94,3 +94,4 @@ delete the comment # before CONFIG_WIN32=y,and recover the Wl,--no-as-needed and
 
 ``yum install mingw64-libpng-static mingw64-zlib.noarch``
 ``mingw64-libjpeg-turbo mingw64-SDL mingw64-SDL_image``
+``make``
